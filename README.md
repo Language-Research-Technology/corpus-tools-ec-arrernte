@@ -4,7 +4,7 @@ Corpus Tools for creating an OCFL repository for Eastern Central Arrernte dictio
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [Node.js](https://nodejs.org/) (v22 or newer needed for oni-ocfl)
 - [npm](https://www.npmjs.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
