@@ -1,0 +1,24 @@
+{
+  "name": "corpus-tools-ec-arrernte",
+  "version": "1.0.0",
+  "description": "Corpus Tools for creating OCFL repository for Eastern Central Arrernte dictionary recodrings",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Language-Research-Technology/corpus-tools-ec-arrernte.git"
+  },
+  "scripts": {
+    "test": "npx mocha"
+  },
+  "private": true,
+  "dependencies": {
+    "jsonld": "^8.3.3",
+    "language-data-commons-vocabs": "github:Language-Research-Technology/language-data-commons-vocabs",
+    "oni-ocfl": "github:Language-Research-Technology/oni-ocfl#v1.7",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.5",
+    "mocha": "^11.7.1"
+  }
+}

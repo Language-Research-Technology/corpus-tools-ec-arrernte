@@ -1,0 +1,29 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "tables": [
+    {
+      "url": "cldf-metadata.json",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "id",
+            "datatype": "string"
+          },
+          {
+            "name": "transcript",
+            "datatype": "string"
+          },
+          {
+            "name": "translation",
+            "datatype": "string"
+          },
+          {
+            "name": "label",
+            "datatype": "string"
+          }
+        ],
+        "primaryKey": "id"
+      }
+    }
+  ]
+}

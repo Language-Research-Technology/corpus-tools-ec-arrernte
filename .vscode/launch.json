@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+      "type": "node",
+      "request": "launch",
+      "name": "Launch corpus tool",
+      "program": "${workspaceFolder}/index.js",
+      "args": [
+        "-s", "ec-arrernte-dictionary-recordings", 
+        "-t", "/opt/storage/ECArrernte/DICTIONARY RECORDINGS TRANSCRIBED ETC", 
+        "-c", "ec-arrernte-dictionary-recordings", 
+        "-n", "LDaCA", 
+        "-r", "ocfl", 
+        "-d", "/opt/storage/ECArrernte/DICTIONARY RECORDINGS TRANSCRIBED ETC", 
+        "-D", "true", 
+        "-p", "temp", 
+        "-z", "scratch-ocfl"
+      ], 
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["--nolazy"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }, {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug ELAN Tests",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/elan.spec.js"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }, {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug cdlf builder Tests",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/cldfMetadataBuilder.spec.js"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
